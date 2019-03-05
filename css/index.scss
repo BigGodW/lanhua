@@ -7,6 +7,7 @@
     top: 0;
     width: 16rem;
     height: px2rem(242);
+    background-color: #E0E0E0;
     
     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2);
     .header-top{
@@ -60,6 +61,7 @@
     
     .header-nav{
         height: px2rem(85);
+        
         position: relative;
         background: url(../img/back_02.jpg);
         .over{
@@ -128,7 +130,9 @@
                 width: 16rem;
                 height: px2rem(300);
                 
-                background: url(../img/nav-back.png);
+                background: url(../img/nav-back.png); 
+                background-size: 100%;
+
                 border-bottom-left-radius: px2rem(30);border-bottom-right-radius: px2rem(30);
                 .list{
                     margin-left: px2rem(-15);

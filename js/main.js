@@ -60,3 +60,13 @@ $('.moreNav .list div').tap(
             
     }
 )
+
+// window.onscroll = function(){
+//     if($('.boxMore').hasClass('block')){
+//         $('.header-nav .nav').removeClass('disnone')
+//         $('.header-nav .more').removeClass('rotate')
+//             $('.boxMore').removeClass('block')
+       
+       
+// }
+// }
