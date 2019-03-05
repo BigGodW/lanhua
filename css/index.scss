@@ -1,0 +1,303 @@
+@import "./px2rem.scss";
+
+
+.header{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 16rem;
+    height: px2rem(242);
+    
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2);
+    .header-top{
+        height: px2rem(158);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        background: url(../img/back_01.jpg);
+        background-size: 100%;
+        .header-left{
+            width: px2rem(100);
+            padding: 0 px2rem(20);
+            img{
+                width: 80%;
+            }
+        }
+        .header-middle{
+            width: px2rem(550);
+            position: relative;
+            
+            input{
+                width: 100%;
+                height: px2rem(62);
+                border: 1px solid #e5e5e5;
+                outline: none;
+                font-size: px2rem(35);
+                color:#666;
+                padding: 0 px2rem(90);
+                border-radius: px2rem(31);
+            }
+            i{
+                position: absolute;
+                top: px2rem(11);
+                left: px2rem(45);
+                font-size: px2rem(30);
+                line-height: px2rem(42);
+            }
+        }
+        .header-right{
+            
+            width: px2rem(100);
+            i{
+                display: block;
+                font-size: px2rem(35);
+                line-height: px2rem(35);
+                text-align: center;
+
+            }
+        }
+    }
+    
+    .header-nav{
+        height: px2rem(85);
+        position: relative;
+        background: url(../img/back_02.jpg);
+        .over{
+            overflow: hidden;
+        }
+        .nav{
+            width: 20rem;
+            li{
+                float: left;
+                font-size: px2rem(30);
+                margin: 0 px2rem(25);
+                line-height: px2rem(81);
+                color: rgb(116,116,116);
+
+            }
+            li.active{
+                color: rgb(237, 91, 0);
+                border-bottom: px2rem(4) solid rgb(237, 91, 0);
+            }
+        }
+        .disnone{
+            display: none;
+        }
+        a.more{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 99;
+            color: #000;
+            text-decoration: none;
+            i{
+                transition:transform .8s;
+                display: inline-block;
+                width: px2rem(68);
+                text-align: center;
+                color:#3c3c3c;
+                font-weight: 900;
+                font-size: px2rem(30)
+            }
+        }
+        .rotate{
+           
+            transform: rotate(180deg);
+            i{
+                color:#fff !important;
+            }
+        }
+        .boxMore{
+            display: none;
+            overflow: hidden;
+            position: absolute;
+            top: px2rem(0);
+            
+            .moreNav{
+                p{
+                    margin: 0;
+                    font-size: 1rem;
+                    line-height:1.5rem !important;
+                    color: yellow;
+                    padding: 0;
+                    
+
+                }
+                padding: 0 px2rem(25);
+                padding-bottom: px2rem(10);
+                width: 16rem;
+                height: px2rem(300);
+                
+                background: url(../img/nav-back.png);
+                border-bottom-left-radius: px2rem(30);border-bottom-right-radius: px2rem(30);
+                .list{
+                    margin-left: px2rem(-15);
+                    margin-top: px2rem(-20);
+                    div{
+                        
+                        float: left;
+                        padding: px2rem(10);
+                        width: px2rem(170);
+                        a{
+                            font-size: px2rem(23);
+                            text-decoration: none;
+                            display: block;
+                            background:rgba(255,255,255,.6);
+                            padding: px2rem(16) 0;
+                            text-align: center;
+                            border:2px solid #eee;
+                            border-radius: px2rem(25);
+                            color: #222;
+                            font-weight: bold;
+                        }
+                    }
+                    .active{
+                        a{
+                            background: #FDE0D5;
+                            border-color: #FF4B00;
+                            color: #ff4b00;
+                        }
+                    }
+                }
+                p{
+                    font-size: px2rem(26);
+                    line-height: px2rem(90);
+                }
+            }
+        }
+        .block{
+            display: block;
+        }
+    }
+}
+.main{
+    
+
+    margin-top: px2rem(242);
+    margin-bottom: px2rem(97);
+    background: url(../img/back_03.jpg);
+    
+    .swiper{
+        .swiper-container{
+            width: 16rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .hot{
+        
+        display: flex;
+        justify-content: space-around;
+        padding: px2rem(15) 0;
+        div{
+            border:1px solid #fff;
+            width: px2rem(150);
+            height: px2rem(150);
+            border-radius: px2rem(75);
+            padding: px2rem(5);
+            background: url(../img/nan-f.png);
+            
+            
+        }
+        .f1{
+            background-position: px2rem(0) 
+        }
+        .f2{
+            background-position: px2rem(150) 
+        }
+        .f3{
+            background-position: px2rem(300) ;
+        }
+        .f4{
+            background-position: px2rem(450)
+        }
+        
+    }
+    .goods{
+        margin-bottom: px2rem(0) ;
+        .card{
+            height: px2rem(100);
+            background-image: url(../img/优惠劵.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: px2rem(20) 0;
+        }
+        .goods-head{
+            background-image: url(../img/热门推荐.png) ;
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: center center;
+            height: px2rem(80);
+        }
+        .back-header{
+            height: px2rem(50);
+           
+            background-image: url(../img/back-header.jpg) ;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center center;
+            
+        }
+        .back-footer{
+            height: px2rem(50);
+            background-image: url(../img/back-footer.jpg) ;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center center;
+
+        }
+        .cells{
+           
+            
+            background-image: url(../img/back-body.jpg) ;
+            background-repeat: repeat-y;
+            background-size: 100%;
+            background-position: center center;
+            img{
+                width: 100%;
+                display: block
+            }
+        }
+
+    }
+}
+    .footer{
+        height: px2rem(100);
+        background-image: url(../img/back_02.jpg) ;
+        background-repeat: repeat-y;
+        background-size: 100%;
+        background-position: center center;
+        
+        height: px2rem(97);
+        width: 16rem;
+        position: fixed;
+        bottom: 0;
+        z-index: 99;
+        ul{
+            li{
+                width: 4rem;
+                float: left;
+                i{
+                    display: block;
+                    text-align: center;
+                    font-size: px2rem(38);
+                    line-height: px2rem(38);
+                    margin-top: px2rem(16 );
+                }
+                span{
+                    font-size: px2rem(18);
+                    display: block;
+                    margin-top: px2rem(8);
+                    margin-bottom: px2rem(28);
+                    text-align: center;
+                    
+                }
+               
+            }
+            li.active{
+                color:#F66B01;
+            }
+        }
+    }

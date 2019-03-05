@@ -1,0 +1,329 @@
+@charset "UTF-8";
+.header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 16rem;
+  height: 5.16267rem;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.header .header-top {
+  height: 3.37067rem;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../img/back_01.jpg);
+  background-size: 100%;
+}
+
+.header .header-top .header-left {
+  width: 2.13333rem;
+  padding: 0 0.42667rem;
+}
+
+.header .header-top .header-left img {
+  width: 80%;
+}
+
+.header .header-top .header-middle {
+  width: 11.73333rem;
+  position: relative;
+}
+
+.header .header-top .header-middle input {
+  width: 100%;
+  height: 1.32267rem;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  font-size: 0.74667rem;
+  color: #666;
+  padding: 0 1.92rem;
+  border-radius: 0.66133rem;
+}
+
+.header .header-top .header-middle i {
+  position: absolute;
+  top: 0.23467rem;
+  left: 0.96rem;
+  font-size: 0.64rem;
+  line-height: 0.896rem;
+}
+
+.header .header-top .header-right {
+  width: 2.13333rem;
+}
+
+.header .header-top .header-right i {
+  display: block;
+  font-size: 0.74667rem;
+  line-height: 0.74667rem;
+  text-align: center;
+}
+
+.header .header-nav {
+  height: 1.81333rem;
+  position: relative;
+  background: url(../img/back_02.jpg);
+}
+
+.header .header-nav .over {
+  overflow: hidden;
+}
+
+.header .header-nav .nav {
+  width: 20rem;
+}
+
+.header .header-nav .nav li {
+  float: left;
+  font-size: 0.64rem;
+  margin: 0 0.53333rem;
+  line-height: 1.728rem;
+  color: #747474;
+}
+
+.header .header-nav .nav li.active {
+  color: #ed5b00;
+  border-bottom: 0.08533rem solid #ed5b00;
+}
+
+.header .header-nav .disnone {
+  display: none;
+}
+
+.header .header-nav a.more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  color: #000;
+  text-decoration: none;
+}
+
+.header .header-nav a.more i {
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
+  display: inline-block;
+  width: 1.45067rem;
+  text-align: center;
+  color: #3c3c3c;
+  font-weight: 900;
+  font-size: 0.64rem;
+}
+
+.header .header-nav .rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.header .header-nav .rotate i {
+  color: #fff !important;
+}
+
+.header .header-nav .boxMore {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0rem;
+}
+
+.header .header-nav .boxMore .moreNav {
+  padding: 0 0.53333rem;
+  padding-bottom: 0.21333rem;
+  width: 16rem;
+  height: 6.4rem;
+  background: url(../img/nav-back.png);
+  border-bottom-left-radius: 0.64rem;
+  border-bottom-right-radius: 0.64rem;
+}
+
+.header .header-nav .boxMore .moreNav p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem !important;
+  color: yellow;
+  padding: 0;
+}
+
+.header .header-nav .boxMore .moreNav .list {
+  margin-left: -0.32rem;
+  margin-top: -0.42667rem;
+}
+
+.header .header-nav .boxMore .moreNav .list div {
+  float: left;
+  padding: 0.21333rem;
+  width: 3.62667rem;
+}
+
+.header .header-nav .boxMore .moreNav .list div a {
+  font-size: 0.49067rem;
+  text-decoration: none;
+  display: block;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.34133rem 0;
+  text-align: center;
+  border: 2px solid #eee;
+  border-radius: 0.53333rem;
+  color: #222;
+  font-weight: bold;
+}
+
+.header .header-nav .boxMore .moreNav .list .active a {
+  background: #FDE0D5;
+  border-color: #FF4B00;
+  color: #ff4b00;
+}
+
+.header .header-nav .boxMore .moreNav p {
+  font-size: 0.55467rem;
+  line-height: 1.92rem;
+}
+
+.header .header-nav .block {
+  display: block;
+}
+
+.main {
+  margin-top: 5.16267rem;
+  margin-bottom: 2.06933rem;
+  background: url(../img/back_03.jpg);
+}
+
+.main .swiper .swiper-container {
+  width: 16rem;
+}
+
+.main .swiper .swiper-container img {
+  width: 100%;
+}
+
+.main .hot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0.32rem 0;
+}
+
+.main .hot div {
+  border: 1px solid #fff;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 1.6rem;
+  padding: 0.10667rem;
+  background: url(../img/nan-f.png);
+}
+
+.main .hot .f1 {
+  background-position: 0rem;
+}
+
+.main .hot .f2 {
+  background-position: 3.2rem;
+}
+
+.main .hot .f3 {
+  background-position: 6.4rem;
+}
+
+.main .hot .f4 {
+  background-position: 9.6rem;
+}
+
+.main .goods {
+  margin-bottom: 0rem;
+}
+
+.main .goods .card {
+  height: 2.13333rem;
+  background-image: url(../img/优惠劵.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0.42667rem 0;
+}
+
+.main .goods .goods-head {
+  background-image: url(../img/热门推荐.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center center;
+  height: 1.70667rem;
+}
+
+.main .goods .back-header {
+  height: 1.06667rem;
+  background-image: url(../img/back-header.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+
+.main .goods .back-footer {
+  height: 1.06667rem;
+  background-image: url(../img/back-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+
+.main .goods .cells {
+  background-image: url(../img/back-body.jpg);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-position: center center;
+}
+
+.main .goods .cells img {
+  width: 100%;
+  display: block;
+}
+
+.footer {
+  height: 2.13333rem;
+  background-image: url(../img/back_02.jpg);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-position: center center;
+  height: 2.06933rem;
+  width: 16rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+}
+
+.footer ul li {
+  width: 4rem;
+  float: left;
+}
+
+.footer ul li i {
+  display: block;
+  text-align: center;
+  font-size: 0.81067rem;
+  line-height: 0.81067rem;
+  margin-top: 0.34133rem;
+}
+
+.footer ul li span {
+  font-size: 0.384rem;
+  display: block;
+  margin-top: 0.17067rem;
+  margin-bottom: 0.59733rem;
+  text-align: center;
+}
+
+.footer ul li.active {
+  color: #F66B01;
+}
+/*# sourceMappingURL=index.css.map */
